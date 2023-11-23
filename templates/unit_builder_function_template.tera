@@ -1,0 +1,15 @@
+
+pub fn {{key}}_builder() -> Vec<Model> {
+
+    let model_map: HashMap<String, Vec<Model>> = read_json_model_file("models.json");
+    
+    
+    let mut unit: Vec<Model> = vec![];
+
+    if let Some(models) = model_map.get("{{key}}") {
+        for model in models {
+            unit.push(model.clone());
+        }
+    }
+    unit
+}

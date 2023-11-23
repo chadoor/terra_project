@@ -1,0 +1,33 @@
+Test
+intercessor_squad
+
+pub fn intercessor_squad_builder() -> Vec<Model> {
+
+    let model_map: HashMap<String, Vec<Model>> = read_json_model_file("models.json");
+    
+    
+    let mut unit: Vec<Model> = vec![];
+
+    if let Some(models) = model_map.get("intercessor_squad") {
+        for model in models {
+            unit.push(model.clone());
+        }
+    }
+    unit
+}
+kaballite_warriors
+
+pub fn kaballite_warriors_builder() -> Vec<Model> {
+
+    let model_map: HashMap<String, Vec<Model>> = read_json_model_file("models.json");
+    
+    
+    let mut unit: Vec<Model> = vec![];
+
+    if let Some(models) = model_map.get("kaballite_warriors") {
+        for model in models {
+            unit.push(model.clone());
+        }
+    }
+    unit
+}

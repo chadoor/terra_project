@@ -1,0 +1,6 @@
+pub fn get_person_{{key}}() -> Person {
+    Person {
+        name: "{{ name }}".to_string(),
+        occupation: "{{ occupation }}".to_string(),
+    }
+}

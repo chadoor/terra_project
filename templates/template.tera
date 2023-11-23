@@ -1,0 +1,4 @@
+
+fn say_hello(){
+    println!("Hello, my name is {{ name }} and I am a {{ occupation }}.");
+}
